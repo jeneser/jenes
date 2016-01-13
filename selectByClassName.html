@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>selectByClassName</title>
+		<style type="text/css">
+.demo {
+    width: 340px;
+    padding: 30px;
+    font: bold 55px/100% "微软雅黑";
+    background: #C5DFF8;
+    text-shadow: 10px 10px 1px red;
+}
+
+		</style>
+	</head>
+	<body>
+		<!--zszs-->
+		<div class="demo">IMOOC</div>
+		<div id="mydiv">mydiv</div>
+		<div>
+			<div>
+				<span class="test">第三级的span</span>
+			</div>
+		</div>
+		<div class="test">同级的第二个div</div>
+		<input type="button" id="btnGet" value="获取test元素" />
+
+		<button onclick="getElement('demo','div')">点我</button>
+		<script>
+ function getElement(className,tag){
+  var ele=document.getElementsByTagName(tag);
+  for (i=0;i<=ele.length;i++){
+   var name=ele[i].getAttribute("class");
+   if(name==className){
+    var myEle=ele[i];
+    break;
+   }else{return 0;}
+  }
+  return myEle;
+  }
+  var myEle=getElement('demo','div');
+  myEle.style.backgroundColor="red";
+ 
+		</script>
+	</body>
+</html>
