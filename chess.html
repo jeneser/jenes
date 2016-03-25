@@ -1,0 +1,75 @@
+<!document html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>五子棋-Jenes</title>
+<style>
+  #chess {
+    display:block;
+    margin:0 auto;
+    background-color:#DEDECF;
+    box-shadow:10px 10px 10px #EFEFEF,-4px -4px 2px #EFEFEF;
+  }
+</style>
+</head>
+  <body>
+   <canvas id="chess" width="750px" height="750px"></canvas>
+
+   <script>
+     var context=chess.getContext("2d");
+     context.strokeStyle="#EFEFEF";
+     //画棋谱
+     for(var i=0;i<19;i++){
+     context.moveTo(15+i*40,15);
+     context.lineTo(15+i*40,735);
+     context.stroke();
+   
+     context.moveTo(15,15+i*40);
+     context.lineTo(735,15+i*40);
+     context.stroke();
+   }
+   
+     var box=document.getElementById("chess");
+     var flag=true;
+   //已下过的点
+   var arr=new Array();
+   for(var i=0;i<19;i++){
+     arr[i]=new Array();
+     for(var j=0;j<19;j++){
+       arr[i][j]=0;
+     }
+   }
+     //落子
+     function drop(i,j,flag){
+     if(!flag){
+       context.fillStyle="#FFF";
+     }else{
+       context.fillStyle="#000";
+     }
+       context.beginPath();
+       context.arc(i*40+15,j*40+15,15,0,2*Math.PI);
+       context.closePath();
+       context.fill();
+   }
+   
+   box.onclick=function(e){
+       var x=e.offsetX;
+       var y=e.offsetY;
+       var i=Math.floor(x/40);
+       var j=Math.floor(y/40);
+          
+       if(arr[i][j]==0){
+         drop(i,j,flag);
+          if(flag){
+      arr[i][j]=1;
+      }else{
+      arr[i][j]=2;
+      }
+      flag=!flag;
+      }
+   }
+
+  
+ </script>
+ </body>
+</html>
