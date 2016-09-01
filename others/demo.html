@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>帧动画</title>
+	<style type="text/css">
+		#pic {
+			width: 140px;
+			height: 75px;
+		}
+	</style>
+</head>
+<body>
+	<div id="pic"></div>
+
+	<script type="text/javascript">
+		var ele=document.getElementById("pic");
+		var img="demo.jpg";
+		var position=["0 -10","-140 -10","-280 -10","-420 -10","0 -90","-140 -90","-280 -90","-420 -90"];
+		animate(ele,img,position);
+		function animate(ele,img,position){
+			var index=0;
+			ele.style.backgroundImage = "url('"+img+"')";
+
+			function run () {
+				var pos=position[index].split(" ");
+				ele.style.backgroundPosition = pos["0"]+"px "+pos["1"]+"px";
+				index++;
+				if (index>=position.length) {
+					index=0;
+				}
+				setTimeout(run,200);
+			}
+			run();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+/*
+*	pc style
+*	min-width: 375px max-width: 767px
+*/
+@import url("commons.css");
+
+@media (max-width: 767px)
+{
+	
+	/*header style*/
+
+	.header
+	{
+		position: relative;
+		height: 670px;
+		background: url("../image/header-bg.png") no-repeat center;
+		background-size: cover;
+	}
+
+	.header-wrapper
+	{
+		height: 670px;
+		background: url("../image/color-effect.png") no-repeat center;
+		background-size: cover;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.menu
+	{
+    	float: right;
+		position: relative;
+    	top: 4%;
+    	right: 6%;
+	}
+
+	.menu span
+	{
+		width: 50px;
+		height: 50px;
+		display: block;
+		background: url("../image/menu-button.png") no-repeat center;
+		background-size: cover;
+		cursor: pointer;
+	}
+
+	.content
+	{
+		position: relative;
+		width: 70%;
+		top: 25%;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	.content h5
+	{
+		font-size: 16px;
+		font-family: "HelveticaLTStd";
+		color: #fff;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+
+	.content h1
+	{
+		font-size: 50px;
+		font-family: "SourceSansPro";
+		color: #fff;
+		line-height: 1.0;
+	}
+
+	.content h4
+	{
+		font-size: 16px;
+		font-family: "FreightTextBookItalic";
+		color: #fff;
+		line-height: 1.5;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+
+	.content span
+	{
+		width: 50px;
+		height: 50px;
+		margin: 25px auto;
+		display: block;
+		background: url("../image/play-button.png") no-repeat;
+		background-size: cover;
+		cursor: pointer;
+	}
+
+	.content button
+	{
+		width: 180px;
+		height: 50px;
+		margin: 30px 10px;
+		border-radius: 5px;
+		font-family: "SourceSansPro";
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.content .bt-h
+	{
+		background-color: #fff;
+	}
+
+	.content .bt-l
+	{
+		background-color: #fff200;
+		display: none;
+	}
+
+	/*about style*/
+
+	.about
+	{
+		box-sizing: border-box;
+		padding: 5% 0;
+		overflow: hidden;
+	}
+
+	.about ul li
+	{
+		text-align: center;
+		box-sizing: border-box;
+		padding: 15px 0;
+	}
+
+	.about img
+	{
+		width: 60%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.about h4
+	{
+		font-size: 20px;
+		font-family: "HelveticaNeue";
+		color: rgb(57, 60, 68);
+		line-height: 2;
+		box-sizing: border-box;
+		padding: 30px 0 0;
+	}
+
+	.about p
+	{
+		font-size: 16px;
+		font-family: "HelveticaNeue";
+		color: rgb(57, 60, 68);
+		line-height: 1.2;
+		box-sizing: border-box;
+		padding: 0px 10px 0;  		
+	}
+
+	.about em
+	{
+		color: #d82028;
+	}
+
+	/*commons project style*/
+
+	.project h2
+	{
+		font-size: 32px;
+		font-family: "HelveticaNeue";
+		color: rgb(19, 120, 204);
+		line-height: 1.2;
+		text-align: center;
+	}
+
+	.slider
+	{
+		position: relative;
+		overflow: hidden;
+		box-sizing: border-box;
+		margin-bottom: -3%;
+	}
+
+	.slider span
+	{
+		position: relative;
+		top: 120px;
+		width: 50px;
+		height: 50px;
+		display: block;
+		margin: auto 5px;
+		cursor: pointer;
+	}
+
+	.slider .back
+	{
+		float: left;
+		background: url("../image/back-button.png") no-repeat center;
+		background-size: cover;
+	}
+
+	.slider .next
+	{
+		float: right;
+		background: url("../image/next-button.png") no-repeat center;
+		background-size: cover;
+	}
+
+	.slider img
+	{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	/*ad style*/
+
+	.ad-wrapper
+	{
+		background: url("../image/ad-bg02-effect.png") no-repeat center;
+		background-size: cover;
+		box-sizing: border-box;
+		padding: 20px 30px 20px 30px;
+		overflow: hidden;
+	}
+
+	.ad-wrapper h2
+	{
+		font-size: 25px;
+		font-family: "HelveticaNeue";
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		line-height: 1.5;
+	}
+
+	.ad-wrapper p
+	{
+		font-size: 18px;
+		font-family: "HelveticaNeue";
+		color: rgb(255, 255, 255);
+	}
+
+	.ad-wrapper button
+	{
+		width: 200px;
+		height: 55px;
+		display: block;
+		margin: 15px auto;
+		font-size: 18px;
+		font-weight: bold;
+		background-color: #fff;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+
+	/*middle ad style*/
+
+	.middle-ad .ad-wrapper
+	{
+		position: relative;
+		z-index: 2;
+		background: url("../image/ad-bg01.png") no-repeat center;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	/*team style*/
+
+	.team
+	{
+		box-sizing: border-box;
+		padding: 10% 50px;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.team h2
+	{
+		font-size: 30px;
+		font-family: "HelveticaNeueLTStd";
+		color: rgb(57, 60, 68);
+		line-height: 1.2;
+	}
+
+	.team img
+	{
+		width: 60%;
+		margin: 30px auto;
+	}
+
+	.team h4
+	{
+		font-size: 20px;
+		font-family: "CentraleSans";
+		color: rgb(57, 60, 68);
+		font-weight: bold;
+		line-height: 1.5;
+	}
+
+	.team span
+	{
+		font-size: 18px;
+		font-family: "CentraleSans";
+		color: rgb(244, 67, 54);
+		font-weight: bold;
+		line-height: 1.2;
+	}
+
+	/*footer ad style*/
+	.footer-ad
+	{
+		background-color: blue;
+		background: url("../image/ad-bg02.png") no-repeat center;
+		background-size: cover;
+	}
+
+	/*footer style*/
+
+	.footer
+	{
+		background: url("../image/footer-bg.png") no-repeat center;
+		background-size: cover;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	/*蒙版*/
+	.footer-wrapper
+	{
+		box-sizing: border-box;
+		padding: 10% 5%;
+		background-color: rgba(0,0,0,.5);
+		overflow: hidden;
+	}
+
+	.footer ul
+	{
+		box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+
+	.footer ul > li:first-child
+	{
+		font-size: 20px;
+		font-family: "HelveticaNeue";
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		line-height: 2.5;
+	}
+
+	.footer ul a
+	{
+		font-size: 18px;
+		font-family: "HelveticaNeue";
+		color: rgb(181, 177, 177);
+		line-height: 2;
+	}
+
+	.footer button
+	{
+		width: 100px;
+		height: 28px;
+		font-size: 14px;
+		background-color: #fff200;
+		border-radius: 20px;
+		margin-left: 15px;
+	}
+
+	.footer .copyright
+	{
+		color: rgb(181, 177, 177);
+	}
+
+	.footer .copyright > li:first-child
+	{
+		font-size: 30px;
+		font-family: "SourceSansPro";
+		color: #fff;
+		line-height: 2.5;
+	}
+
+	.footer p
+	{
+		color: rgb(181, 177, 177);
+		text-align: center;
+		padding-top: 30px;
+	}
+}

@@ -1,0 +1,51 @@
+/*reset style*/
+
+html, body, p, span, ul, li, button, h1, h2, h3, h4, h5, h6, a, img, hr, form, input, select, textarea
+{
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.center
+{
+	margin: 0px auto;
+	width: 1180px;
+}
+
+ul li
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+button
+{
+	border: none;
+	cursor: pointer;
+}
+
+input, select, textarea
+{
+	border: none;
+}
+/*清除浮动*/
+
+.clearfix
+{
+	*zoom:1;/*兼容IE7以下*/
+	clear: both;
+}
+
+.clearfix:after
+{
+	content: "";
+    height: 0;
+    overflow: hidden;
+    display: table;
+    clear: both;
+}

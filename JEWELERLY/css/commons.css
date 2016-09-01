@@ -1,0 +1,44 @@
+html, body, p, span, ul, li, button, h1, h2, h3, h4, h5, h6, a, img, hr
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto";
+}
+
+.center
+{
+	margin: 0px auto;
+	width: 1000px;
+}
+
+ul li
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+button
+{
+	border: none;
+}
+
+hr
+{
+	border: solid 1px #F2EDED;
+}
+/*清除浮动*/
+.clearfix
+{
+	*zoom:1;/*兼容IE7以下*/
+}
+
+.clearfix:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}

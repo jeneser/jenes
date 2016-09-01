@@ -1,0 +1,489 @@
+/*pc and pad style*/
+
+@import url("commons.css");
+
+/*
+*	pc style
+*	min-width: 1024px
+*/
+
+/*header style*/
+
+.header
+{
+	position: relative;
+	height: 780px;
+	background: url("../image/header-bg.png") no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.header-wrapper
+{
+	height: 780px;
+	background: url("../image/color-effect.png") no-repeat center;
+	background-size: cover;
+}
+
+.menu
+{
+	position: relative;
+	top: 70px;
+	left: 70px;
+}
+
+.menu span
+{
+	width: 58px;
+	height: 58px;
+	display: block;
+	background: url("../image/menu-button.png") no-repeat;
+	cursor: pointer;
+}
+
+.content
+{
+	position: relative;
+	top: 200px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.content h5
+{
+	font-size: 18px;
+	font-family: "HelveticaLTStd";
+	color: #fff;
+	fon-weight: bold;
+	line-height: 1.2;
+}
+
+.content h1
+{
+	font-size: 75px;
+	font-family: "SourceSansPro";
+	color: #fff;
+	line-height: 1.2;
+}
+
+.content h4
+{
+	width: 70%;
+	font-size: 20px;
+	font-family: "FreightTextBookItalic";
+	color: #fff;
+	line-height: 1.4;
+	margin: 0 auto;
+}
+
+.content span
+{
+	width: 60px;
+	height: 60px;
+	margin: 30px auto;
+	display: block;
+	background: url("../image/play-button.png") no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.content button
+{
+	width: 180px;
+	height: 50px;
+	margin: 30px 10px;
+	border-radius: 5px;
+	font-family: "SourceSansPro";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.content .bt-h
+{
+	background-color: #fff;
+}
+
+.content .bt-l
+{
+	background-color: #fff200;
+}
+
+/*commons about style*/
+
+.about
+{
+	box-sizing: border-box;
+	padding: 100px 0;
+	overflow: hidden;
+}
+
+.about ul
+{
+	display: table;
+	width: 100%;
+}
+
+.about ul li
+{
+	width: 33.33%;
+	display: table-cell;
+	text-align: center;
+}
+
+.about img
+{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+.about h4
+{
+	font-size: 20px;
+	font-family: "HelveticaNeue";
+	color: rgb(57, 60, 68);
+	line-height: 2;
+	box-sizing: border-box;
+	padding: 30px 0 10px 0;
+}
+
+.about p
+{
+	font-size: 16px;
+	font-family: "HelveticaNeue";
+	color: rgb(57, 60, 68);
+	line-height: 1.2;
+	box-sizing: border-box;
+	padding: 0px 10px 0;  		
+}
+
+.about em
+{
+	color: #d82028;
+}
+
+/*commons project style*/
+
+.project h2
+{
+	font-size: 32px;
+	font-family: "HelveticaNeue";
+	color: rgb(19, 120, 204);
+	line-height: 1.2;
+	text-align: center;
+}
+
+.slider
+{
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-bottom: -3%;
+}
+
+.slider span
+{
+	position: relative;
+	top: 250px;
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin: auto 100px;
+	cursor: pointer;
+}
+
+.slider .back
+{
+	float: left;
+	background: url("../image/back-button.png") no-repeat center;
+	background-size: cover;
+}
+
+.slider .next
+{
+	float: right;
+	background: url("../image/next-button.png") no-repeat center;
+	background-size: cover;
+}
+
+.slider img
+{
+	width: 65%;
+	display: block;
+	margin: 0 auto;
+}
+
+/*ad style*/
+
+.ad-wrapper
+{
+	background: url("../image/ad-bg02-effect.png") no-repeat center;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 40px 30px 62px 30px;
+	overflow: hidden;
+}
+
+.ad-wrapper h2
+{
+	font-size: 35px;
+	font-family: "HelveticaNeue";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 2.2;
+}
+
+.ad-wrapper p
+{
+	font-size: 18px;
+	font-family: "HelveticaNeue";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	margin-right: 40%;
+}
+
+.ad-wrapper button
+{
+	float: right;
+	width: 250px;
+	height: 65px;
+	display: inline-block;
+	margin: -60px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/*middle ad style*/
+
+.middle-ad .ad-wrapper
+{
+	position: relative;
+	z-index: 2;
+	background: url("../image/ad-bg01.png") no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+}
+.middle-ad h2
+{
+	margin-right: 280px;
+}
+
+/*team style*/
+
+.team
+{
+	box-sizing: border-box;
+	padding: 100px 50px;
+	overflow: hidden;
+}
+
+.team h2
+{
+	font-size: 32px;
+	font-family: "HelveticaNeueLTStd";
+	color: rgb(57, 60, 68);
+	line-height: 1.5;
+}
+
+.team ul
+{
+	width: 100%;
+	display: table;
+
+}
+
+.team li
+{
+	width: 20%;
+	display: table-cell;
+	text-align: center;
+}
+
+.team img
+{
+	width: 80%;
+	margin: 30px auto;
+}
+
+.team h4
+{
+	font-size: 20px;
+	font-family: "CentraleSans";
+	color: rgb(57, 60, 68);
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.team span
+{
+	font-size: 18px;
+	font-family: "CentraleSans";
+	color: rgb(244, 67, 54);
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+/*footer ad style*/
+.footer-ad
+{
+	height: 200px;
+	background-color: blue;
+	background: url("../image/ad-bg02.png") no-repeat center;
+	background-size: cover;
+}
+
+/*commons footer style*/
+
+.footer
+{
+	background: url("../image/footer-bg.png") no-repeat center;
+	background-size: cover;
+	box-sizing: border-box;
+}
+
+/*蒙版*/
+.footer-wrapper
+{
+	box-sizing: border-box;
+	padding: 100px 5%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.footer ul
+{
+	width: 21%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.footer ul > li:first-child
+{
+	font-size: 20px;
+	font-family: "HelveticaNeue";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 2.5;
+}
+
+.footer ul a
+{
+	font-size: 18px;
+	font-family: "HelveticaNeue";
+	color: rgb(181, 177, 177);
+	line-height: 2;
+}
+
+.footer button
+{
+	width: 100px;
+	height: 28px;
+	font-size: 14px;
+	background-color: #fff200;
+	border-radius: 20px;
+	margin-left: 15px;
+}
+
+.footer .copyright
+{
+	float: right;
+	color: rgb(181, 177, 177);
+	text-align: right;
+}
+
+.footer .copyright > li:first-child
+{
+	font-size: 25px;
+	font-family: "SourceSansPro";
+	color: #fff;
+	line-height: 2.5;
+}
+
+.footer p
+{
+	color: rgb(181, 177, 177);
+	text-align: center;
+	padding-top: 100px;
+}
+
+/*
+*	pad style
+*	extend pc style
+*	min-width: 768px max-width: 1023px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+
+	/*about style*/
+
+	.about img
+	{
+		width: 80%;
+	}
+
+	/*project style*/
+
+	.slider
+	{
+	    margin-bottom: -3%;
+	}
+
+	.slider span
+	{
+	    position: relative;
+	    top: 150px;
+	    width: 70px;
+	    height: 70px;
+	    display: block;
+	    margin: auto 5%;
+	    cursor: pointer;
+	}
+
+	/*middle ad style*/
+	
+	.middle-ad .ad-wrapper
+	{
+	    padding: 35px;
+	}
+
+	.middle-ad h2
+	{
+	    font-size: 25px;
+	    font-family: "HelveticaNeue";
+	    color: rgb(255, 255, 255);
+	    font-weight: bold;
+	    line-height: 1.2;
+	}
+	
+	.middle-ad p
+	{
+	    line-height: 2.2;
+	}
+
+	/*team style*/
+
+	.team
+	{
+	    padding: 60px 50px;
+	}
+
+	/*footer style*/
+
+	.footer-wrapper
+	{
+		padding: 80px 5%;
+	}
+
+	.footer ul
+	{
+		width: 23%;
+	}
+
+	.footer .copyright > li:first-child
+	{
+		line-height: 1.2;
+	}
+}
